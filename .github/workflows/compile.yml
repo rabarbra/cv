@@ -53,5 +53,7 @@ jobs:
         with:
           name: "${{ github.ref_name }} — ${{ env.DATE }}"
           files: |
-            "*.pdf"
-            "*.png"
+            cv_en.pdf
+            cv_de.pdf
+            cv_en.png
+            cv_de.png
