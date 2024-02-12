@@ -15,8 +15,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: install ghostscript
-        run: sudo apt install imagemagick
+      - name: install imagemagick
+        run: sudo apt install ghostscript
       - name: Change ImageMagick security policy
         run: |
           DQT='"' 
