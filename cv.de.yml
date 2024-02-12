@@ -5,7 +5,7 @@ contact:
   content:
     tel: +49 162 180 9013
     email: rabarbrablad@gmail.com
-    gihub: github.com/rabarbra
+    github: github.com/rabarbra
     linkedin: linkedin.com/in/polina-simonenko
     location: Wolfsburg, Deutschland
 education:
@@ -14,18 +14,18 @@ education:
     -
       organization: 42 Wolfsburg
       discipline: Softwareentwicklung
-      from: 2022
+      from: "2022"
       to: heute
     -
       organization: Höhere Wirtschaftsschule (Moskau)
       discipline: Mathematik
-      from: 2017
-      to: 2018
+      from: "2017"
+      to: "2018"
     -
       organization: Lomonosov-Universität Moskau
       discipline: Norwegische Sprache und Literatur
-      from: 2013
-      to: 2016
+      from: "2013"
+      to: "2016"
 skills:
   title: Fähigkeiten
   content:
