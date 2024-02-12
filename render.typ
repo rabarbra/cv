@@ -3,7 +3,6 @@
   for (key, value) in contacts.content {
     value
   }
-
 }
 
 #let build_education(education) = {
