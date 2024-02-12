@@ -26,6 +26,6 @@ jobs:
           ./typst compile cv_de.typ
       - uses: actions/upload-artifact@v4
         with:
-          name: Upload pdf
+          name: CVs
           path: |
             *.pdf
