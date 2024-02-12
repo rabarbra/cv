@@ -9,17 +9,18 @@ on:
 
 jobs:
   build:
-    runs-on: alpine-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
       - name: Install typst
         run: |
-          echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
-          apk add --no-cache typst
+          curl -O https://github.com/typst/typst/releases/download/v0.10.0/typst-x86_64-unknown-linux-musl.tar.xz
+          tar -xf typst-x86_64-unknown-linux-musl.tar.xz && mv typst-x86_64-unknown-linux-musl.tar.xz typst
+          chmod +x typst
       - name: Compile CVs
         run: |
-          typst compile cv_en.typ
-          typst compile cv_de.typ
+          ./typst compile cv_en.typ
+          ./typst compile cv_de.typ
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.2          
