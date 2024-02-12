@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install xz-utils
-        run: apt install xz-utils
+        run: sudo apt update && sudo apt install xz-utils
       - name: Install typst
         run: |
           curl -O https://github.com/typst/typst/releases/download/v0.10.0/typst-x86_64-unknown-linux-musl.tar.xz
