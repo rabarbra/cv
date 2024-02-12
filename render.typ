@@ -56,6 +56,7 @@
     )
     align(center, upper(it))
   }
+  
   heading(level: 1)[#contents.title]
   heading(level: 3)[#contents.subtitle]
   build_contacts(contents.contact)
