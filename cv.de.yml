@@ -1,0 +1,90 @@
+title: Polina Simonenko
+subtitle: Full Stack Entwicklerin
+contact:
+  title: Kontaktdaten
+  content:
+    tel: +49 162 180 9013
+    email: rabarbrablad@gmail.com
+    gihub: github.com/rabarbra
+    linkedin: linkedin.com/in/polina-simonenko
+    location: Wolfsburg, Deutschland
+education:
+  title: Ausbildung
+  content:
+    -
+      organization: 42 Wolfsburg
+      discipline: Softwareentwicklung
+      from: 2022
+      to: heute
+    -
+      organization: Höhere Wirtschaftsschule (Moskau)
+      discipline: Mathematik
+      from: 2017
+      to: 2018
+    -
+      organization: Lomonosov-Universität Moskau
+      discipline: Norwegische Sprache und Literatur
+      from: 2013
+      to: 2016
+skills:
+  title: Fähigkeiten
+  content:
+    - Python
+    - Flask, FastAPI
+    - OAuth 2, OpenID Connect
+    - SQLAlchemy
+    - TypeScript
+    - React, MUI, Mantine, Redux
+    - MongoDB, Redis
+    - PostgreSQL
+    - Docker, Docker Compose
+    - "AWS: Lambda, SQS, CloudFormation, ECS"
+    - Github Actions
+    - C, C++
+    - Go
+    - Linux, Bash
+    - Esp32, MQTT, Arduino
+languages:
+  title: Sprachen
+  content:
+    -
+      lang: Englisch
+      level: B2
+    -
+      lang: Deutsch
+      level: B2
+    -
+      lang: Russisch
+      level: Muttersprache
+profile:
+  title: Profil
+  content:
+    - "Ich bin eine Full-Stack Entwicklerin mit 2 Jahren kommerzieller Erfahrung. Meine Expertise umfasst die Entwicklung von Webanwendungen sowohl im Backend (Python, MongoDB, PostgreSQL) als auch im Frontend (Typescript, React), das Verpacken in Docker und das Bereitstellen auf AWS (und anderen Cloud- Plattformen)."
+    - "Darüber hinaus verfüge ich über Erfahrung in der Konfiguration von CI/CD-Pipelines und habe umfangreiche Erfahrung mit GitHub Actions."
+experience:
+  title: Berufserfahrung
+  content:
+    -
+      position: Full Stack Entwicklerin
+      organization: Funexpected LTD
+      from: Oktober 2021
+      to: Mai 2023
+      description:
+       - "Entwickelte Backend und Infrastruktur für eine mobile App in Python, nutzte AWS Lambda für serverlose Ausführung und führte Bereitstellungen über GitHub Actions durch. Verwendete MongoDB und SQS. Beschrieb die Infrastruktur in AWS CloudFormation und verfasste Deploymentkonfigurationen."
+       - "Erstellte eine Administrationskonsole zur Verwaltung des Unternehmens- Ökosystems. Einige ihrer Funktionen umfassen das Hinzufügen neuer Aufgaben zur App, Aktualisierungen von Medienressourcen und die Verwaltung von Benutzerabonnements. Backend: Python, MongoDB, AWS. Frontend: React, Typescript, React Admin."
+       - "Habe mit Apple-Entwicklern zusammengearbeitet, um eine Lehrer-App für die Apple School Manager-Plattform zu erstellen. Von Apple als Beispiel für eine der ersten Apps auf dieser Plattform hervorgehoben. Lehrer können Klassen verwalten, Schüler hinzufügen und Statistiken einsehen. Backend: Python, MongoDB, AWS. Frontend: Typescript, React, MUI, TanStack Query."
+       - "Beschrieb die Infrastruktur mit CloudFormation und verfasste umfassende Bereitstellungs- sowie CI/CD-Konfigurationen."
+       - "Verfasste Tests und Dokumentation für meinen Arbeitsbereich."
+       - "Arbeitete im Team mit zweiwöchigen Scrum-Sprints im agilen und effizienten Entwicklungsprozess."
+    -
+      position: Support-Ingenieurin für Finanzinstrumente
+      organization: Exante LTD
+      from: April 2021
+      to: Oktober 2021
+      description:
+       - "Automatisierte Aufgaben für das Team der Finanzinstrumenten-Support, was zu einer Steigerung der Teameffizienz und des verarbeiteten Aufgabenvolumens führte."
+       - "Implementierte Werkzeuge für das Team, um den Prozess der Hinzufügung von Finanzinstrumenten zur Plattform des Unternehmens zu optimieren und deren optimale Leistung sicherzustellen. Entwickelte Skripte für manuelle und automatische Hinzufügungen und Modifikationen, um die operative Flexibilität zu verbessern. Verwendete Technologien: Python, Bash, Flask, ElasticSearch, Cron, ETL."
+       - "Automatisierte den gesamten Lebenszyklus von Finanzinstrumenten, einschließlich der Prozesse der Hinzufügung, Wartung und Überwachung. Führte Analysen der Finanzmärkte durch, arbeitete mit Börsen-APIs, dem FIX-Protokoll und Tools wie dem Bloomberg Terminal, Refinitiv, etc."
+       - "Behebung technischer Probleme mit Auftragnehmern für einen reibungslosen Tool- und Prozessbetrieb. Expertenberatung für Kunden bei Marktdatenfragen zur optimalen Nutzung von Finanzinstrumenten."
+       - "Half bei der Identifizierung und Lösung von Problemen im Bereich Marktdaten durch Zusammenarbeit mit relevanten Abteilungen für eine effiziente Lösung."
+       - "Verfasste technische Dokumentationen, um umfassende Aufzeichnungen über implementierte Lösungen und Prozesse zu bieten, und gewährleistete so Transparenz und Rückverfolgbarkeit."
