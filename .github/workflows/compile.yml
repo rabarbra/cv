@@ -13,8 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      #- name: Install xz-utils
-      #  run: sudo apt update && sudo apt install xz-utils wget
       - name: Install typst
         run: |
           wget https://github.com/typst/typst/releases/download/v0.10.0/typst-x86_64-unknown-linux-musl.tar.xz
@@ -22,8 +20,8 @@ jobs:
           chmod +x typst
       - name: Compile CVs
         run: |
-          ./typst --font-path ./fonts compile cv_en.typ
-          ./typst --font-path ./fonts compile cv_de.typ
+          ./typst compile --font-path ./fonts cv_en.typ
+          ./typst compile --font-path ./fonts cv_de.typ
       - uses: actions/upload-artifact@v4
         with:
           name: CVs
