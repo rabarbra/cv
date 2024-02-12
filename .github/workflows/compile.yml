@@ -34,8 +34,8 @@ jobs:
           ./typst compile --font-path ./fonts cv_de.typ
       - name: convert pdf to png
         run: |
-          convert -density 900 -background white -alpha off cv_en.pdf -quality 90 cv_en.png
-          convert -density 900 -background white -alpha off cv_de.pdf -quality 90 cv_de.png
+          convert -density 900 -background white -alpha off cv_en.pdf cv_en.png
+          convert -density 900 -background white -alpha off cv_de.pdf cv_de.png
       - uses: actions/upload-artifact@v4
         with:
           name: CVs
