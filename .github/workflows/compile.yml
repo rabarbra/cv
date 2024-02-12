@@ -26,7 +26,8 @@ jobs:
         with:
           name: CVs
           path: |
-            *.pdf
+            cv_en.pdf
+            cv_de.pdf
       - name: Get current date
         id: date
         run: echo "DATE=$(date +%Y-%m-%d-%H:%M)" >> $GITHUB_ENV
