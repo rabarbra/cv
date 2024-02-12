@@ -13,10 +13,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: Install xz-utils
+        run: apt install xz-utils
       - name: Install typst
         run: |
           curl -O https://github.com/typst/typst/releases/download/v0.10.0/typst-x86_64-unknown-linux-musl.tar.xz
-          tar -xJf typst-x86_64-unknown-linux-musl.tar.xz && mv typst-x86_64-unknown-linux-musl.tar.xz typst
+          tar -xJf typst-x86_64-unknown-linux-musl.tar.xz && mv typst-x86_64-unknown-linux-musl typst
           chmod +x typst
       - name: Compile CVs
         run: |
