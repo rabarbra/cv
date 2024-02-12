@@ -19,15 +19,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: install imagemagick
+      - name: Install imagemagick
         run: sudo apt install ghostscript
-      - name: Change ImageMagick security policy
+      - name: Change imagemagick security policy
         run: |
           DQT='"' 
           SRC="rights=${DQT}none${DQT} pattern=${DQT}PDF${DQT}"
           RPL="rights=${DQT}read\|write${DQT} pattern=${DQT}PDF${DQT}"
           sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
-      - name: install typst
+      - name: Install typst
         run: |
           wget https://github.com/typst/typst/releases/download/v0.10.0/typst-x86_64-unknown-linux-musl.tar.xz
           tar -xJf typst-x86_64-unknown-linux-musl.tar.xz && mv typst-x86_64-unknown-linux-musl/typst .
@@ -36,7 +36,7 @@ jobs:
         run: |
           ./typst compile --font-path ./fonts cv_en.typ
           ./typst compile --font-path ./fonts cv_de.typ
-      - name: convert pdf to png
+      - name: Convert pdf to png
         run: |
           convert -density 900 -background white -alpha off -resize 50% cv_en.pdf cv_en.png
           convert -density 900 -background white -alpha off -resize 50% cv_de.pdf cv_de.png
