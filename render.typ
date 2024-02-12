@@ -65,7 +65,3 @@
   build_profile(contents.profile)
   build_experience(contents.experience)
 }
-
-#render(
-  yaml("cv.en.yml")
-)
