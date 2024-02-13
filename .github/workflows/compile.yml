@@ -27,6 +27,9 @@ jobs:
           SRC="rights=${DQT}none${DQT} pattern=${DQT}PDF${DQT}"
           RPL="rights=${DQT}read\|write${DQT} pattern=${DQT}PDF${DQT}"
           sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
+          SRC="name=${DQT}disk${DQT} value=${DQT}1GiB${DQT}"
+          RPL="name=${DQT}disk${DQT} value=${DQT}8GiB${DQT}"
+          sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
       - name: Install typst
         run: |
           wget https://github.com/typst/typst/releases/download/v0.10.0/typst-x86_64-unknown-linux-musl.tar.xz
