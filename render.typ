@@ -1,9 +1,12 @@
+#let header_v_sp = v(8pt)
+#let gmaps = "https://www.google.com/maps/place/"
+
 #let imgs = (
-  tel: "img/tel.svg",
-  github: "img/github.svg",
+  tel:      "img/tel.svg",
+  github:   "img/github.svg",
   linkedin: "img/linkedin.svg",
   location: "img/location.svg",
-  email: "img/email.svg",
+  email:    "img/email.svg",
 )
 
 #let icon(name, shift: 1.5pt) = {
@@ -15,31 +18,47 @@
   h(3pt)
 }
 
+#let maybe_link(key, value) = {
+  if key == "tel" {
+    link("tel:" + value)
+  } else if key == "email" {
+    link("mailto:" + value)
+  } else if key == "github" {
+    link("https://" + value)[#value]
+  } else if key == "linkedin" {
+    link("https://" + value)[#value]
+  } else if key == "location" {
+    link(gmaps + value.city)[#value.city, #value.country]
+  } else {
+    value
+  }
+}
+
 #let build_contacts(contacts) = {
   heading(level: 3, contacts.title)
-  v(8pt)
+  header_v_sp
   for (key, value) in contacts.content {
-    text[#icon(key) #value]
+    text[#icon(key) #maybe_link(key, value)]
     [\ ]
   }
 }
 
 #let build_education(education) = {
   heading(level: 3, education.title)
-  v(8pt)
+  header_v_sp
   for item in education.content {
     item.organization
     [\ ]
     item.discipline
     [\ ]
     [#item.from - #item.to]
-    [\ ]
+    v(3pt)
   }
 }
 
 #let build_skills(skills) = {
   heading(level: 3, skills.title)
-  v(8pt)
+  header_v_sp
   for el in skills.content {
     list(el)
   }
@@ -47,7 +66,7 @@
 
 #let build_languages(languages) = {
   heading(level: 3, languages.title)
-  v(8pt)
+  header_v_sp
   for el in languages.content {
     list[#el.lang - #el.level]
   }
@@ -64,16 +83,15 @@
 
 #let build_experience(experience) = {
   heading(level: 3, experience.title)
-  v(8pt)
+  header_v_sp
   for el in experience.content {
+    [#el.position #h(1fr) #text(size: 9pt)[#el.from - #el.to]]
+    [\ ]
     el.organization
-    [\ ]
-    el.position
-    [\ ]
-    [#el.from - #el.to]
     for it in el.description {
       list(text(size: 9pt, it))
     }
+    v(3pt)
   }
 }
 
@@ -99,6 +117,8 @@
     set text(
       weight: "semibold",
       fill: rgb(100, 100, 100),
+      tracking: 1.2pt,
+      spacing: 150%
     )
     upper(it)
   }
@@ -117,7 +137,7 @@
       build_languages(contents.languages),
     ),
     stack(
-      spacing: 1fr,
+      spacing: 30pt,
       build_profile(contents.profile),
       build_experience(contents.experience)
     )

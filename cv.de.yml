@@ -7,7 +7,9 @@ contact:
     email: rabarbrablad@gmail.com
     github: github.com/rabarbra
     linkedin: linkedin.com/in/polina-simonenko
-    location: Wolfsburg, Deutschland
+    location:
+      city: Wolfsburg
+      country: Deutschland
 education:
   title: Ausbildung
   content:
