@@ -80,7 +80,7 @@
   )
   set text(
     font: "Blinker",
-    //size: 16pt
+    size: 8pt
   )
   set page(
     paper: "a4",
@@ -99,10 +99,18 @@
 
   heading(level: 1)[#contents.title]
   heading(level: 2)[#contents.subtitle]
-  build_contacts(contents.contact)
-  build_education(contents.education)
-  build_skills(contents.skills)
-  build_languages(contents.languages)
-  build_profile(contents.profile)
-  build_experience(contents.experience)
+  grid(
+    columns: (1fr, 2fr),
+    gutter: 3pt,
+    block(
+      build_contacts(contents.contact) + 
+      build_education(contents.education) +
+      build_skills(contents.skills) +
+      build_languages(contents.languages)
+    ),
+    block(
+      build_profile(contents.profile) +
+      build_experience(contents.experience)
+    )
+  )
 }
