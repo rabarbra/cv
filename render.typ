@@ -17,6 +17,7 @@
 
 #let build_contacts(contacts) = {
   heading(level: 3, contacts.title)
+  v(8pt)
   for (key, value) in contacts.content {
     text[#icon(key) #value]
     [\ ]
@@ -25,6 +26,7 @@
 
 #let build_education(education) = {
   heading(level: 3, education.title)
+  v(8pt)
   for item in education.content {
     item.organization
     [\ ]
@@ -37,6 +39,7 @@
 
 #let build_skills(skills) = {
   heading(level: 3, skills.title)
+  v(8pt)
   for el in skills.content {
     list(el)
   }
@@ -44,6 +47,7 @@
 
 #let build_languages(languages) = {
   heading(level: 3, languages.title)
+  v(8pt)
   for el in languages.content {
     list[#el.lang - #el.level]
   }
@@ -51,6 +55,7 @@
 
 #let build_profile(profile) = {
   heading(level: 3, profile.title)
+  v(8pt)
   for el in profile.content {
     el
     [\ ]
@@ -59,6 +64,7 @@
 
 #let build_experience(experience) = {
   heading(level: 3, experience.title)
+  v(8pt)
   for el in experience.content {
     el.organization
     [\ ]
@@ -66,7 +72,7 @@
     [\ ]
     [#el.from - #el.to]
     for it in el.description {
-      list(it)
+      list(text(size: 9pt, it))
     }
   }
 }
@@ -84,7 +90,7 @@
   )
   set page(
     paper: "a4",
-    margin: (x: 1.5cm, y: 1cm),
+    margin: (x: 1.5cm, y: 1.5cm),
   )
   set list(indent: 1em)
 
@@ -99,17 +105,20 @@
 
   heading(level: 1, text(size: 26pt)[#contents.title])
   heading(level: 2)[#contents.subtitle]
+  v(30pt)
   grid(
     columns: (1fr, 2fr),
     gutter: 3pt,
-    block(
-      build_contacts(contents.contact) + 
-      build_education(contents.education) +
-      build_skills(contents.skills) +
-      build_languages(contents.languages)
+    stack(
+      spacing: 1fr,
+      build_contacts(contents.contact),
+      build_education(contents.education),
+      build_skills(contents.skills),
+      build_languages(contents.languages),
     ),
-    block(
-      build_profile(contents.profile) +
+    stack(
+      spacing: 1fr,
+      build_profile(contents.profile),
       build_experience(contents.experience)
     )
   )
