@@ -84,12 +84,12 @@
   )
   set page(
     paper: "a4",
-    margin: (x: 1.5cm, y: 1.5cm),
+    margin: (x: 1.5cm, y: 1cm),
   )
   set list(indent: 1em)
 
   show heading: it => {
-    set block(below: 10pt)
+    set block(below: 8pt)
     set text(
       weight: "semibold",
       fill: rgb(100, 100, 100),
