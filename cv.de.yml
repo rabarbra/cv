@@ -17,7 +17,7 @@ education:
       organization: 42 Wolfsburg
       discipline: Softwareentwicklung
       from: "2022"
-      to: heute
+      to: Heute
     -
       organization: Höhere Wirtschaftsschule (Moskau)
       discipline: Mathematik
@@ -69,7 +69,7 @@ experience:
     -
       position: Full Stack Entwicklerin
       organization: Funexpected LTD
-      from: Oktober 2021
+      from: Okt 2021
       to: Mai 2023
       description:
        - "Entwickelte Backend und Infrastruktur für eine mobile App in Python, nutzte AWS Lambda für serverlose Ausführung und führte Bereitstellungen über GitHub Actions durch. Verwendete MongoDB und SQS. Beschrieb die Infrastruktur in AWS CloudFormation und verfasste Deploymentkonfigurationen."
@@ -81,12 +81,14 @@ experience:
     -
       position: Support-Ingenieurin für Finanzinstrumente
       organization: Exante LTD
-      from: April 2021
-      to: Oktober 2021
+      from: Apr 2021
+      to: Okt 2021
       description:
        - "Automatisierte Aufgaben für das Team der Finanzinstrumenten-Support, was zu einer Steigerung der Teameffizienz und des verarbeiteten Aufgabenvolumens führte."
-       - "Implementierte Werkzeuge für das Team, um den Prozess der Hinzufügung von Finanzinstrumenten zur Plattform des Unternehmens zu optimieren und deren optimale Leistung sicherzustellen. Entwickelte Skripte für manuelle und automatische Hinzufügungen und Modifikationen, um die operative Flexibilität zu verbessern. Verwendete Technologien: Python, Bash, Flask, ElasticSearch, Cron, ETL."
-       - "Automatisierte den gesamten Lebenszyklus von Finanzinstrumenten, einschließlich der Prozesse der Hinzufügung, Wartung und Überwachung. Führte Analysen der Finanzmärkte durch, arbeitete mit Börsen-APIs, dem FIX-Protokoll und Tools wie dem Bloomberg Terminal, Refinitiv, etc."
+       - "Implementierte Werkzeuge für das Team, um den Prozess der Hinzufügung von Finanzinstrumenten zur Plattform des Unternehmens zu optimieren und deren optimale Leistung sicherzustellen."
+       - "Entwickelte Skripte für manuelle und automatische Hinzufügungen und Modifikationen, um die operative Flexibilität zu verbessern. Verwendete Technologien: Python, Bash, Flask, ElasticSearch, Cron, ETL."
+       - "Automatisierte den gesamten Lebenszyklus von Finanzinstrumenten, einschließlich der Prozesse der Hinzufügung, Wartung und Überwachung."
+       - "Führte Analysen der Finanzmärkte durch, arbeitete mit Börsen-APIs, dem FIX-Protokoll und Tools wie dem Bloomberg Terminal, Refinitiv, etc."
        - "Behebung technischer Probleme mit Auftragnehmern für einen reibungslosen Tool- und Prozessbetrieb. Expertenberatung für Kunden bei Marktdatenfragen zur optimalen Nutzung von Finanzinstrumenten."
        - "Half bei der Identifizierung und Lösung von Problemen im Bereich Marktdaten durch Zusammenarbeit mit relevanten Abteilungen für eine effiziente Lösung."
        - "Verfasste technische Dokumentationen, um umfassende Aufzeichnungen über implementierte Lösungen und Prozesse zu bieten, und gewährleistete so Transparenz und Rückverfolgbarkeit."

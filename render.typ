@@ -47,12 +47,12 @@
   heading(level: 3, education.title)
   header_v_sp
   for item in education.content {
-    item.organization
+    text(size: 9pt)[#item.from - #item.to]
     [\ ]
-    item.discipline
+    text(size: 11pt, weight: "regular")[#item.organization]
     [\ ]
-    [#item.from - #item.to]
-    v(3pt)
+    text(size: 10pt, weight: "light")[#item.discipline]
+    v(2pt)
   }
 }
 
@@ -85,9 +85,10 @@
   heading(level: 3, experience.title)
   header_v_sp
   for el in experience.content {
-    [#el.position #h(1fr) #text(size: 9pt)[#el.from - #el.to]]
+    [#text(size: 11pt)[#el.position] #h(1fr) #text(size: 9pt)[#el.from - #el.to]]
     [\ ]
-    el.organization
+    text(size: 10pt, weight: "light")[#el.organization]
+    v(2pt)
     for it in el.description {
       list(text(size: 9pt, it))
     }
@@ -108,7 +109,7 @@
   )
   set page(
     paper: "a4",
-    margin: (x: 1.5cm, y: 1.5cm),
+    margin: (x: 1.3cm, y: 1.5cm),
   )
   set list(indent: 1em)
 
@@ -123,7 +124,7 @@
     upper(it)
   }
 
-  heading(level: 1, text(size: 26pt)[#contents.title])
+  text(size: 20pt, fill: rgb(10, 10, 10))[#heading(level: 1)[#contents.title]]
   heading(level: 2)[#contents.subtitle]
   v(30pt)
   grid(
