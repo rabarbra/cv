@@ -80,11 +80,11 @@
   )
   set text(
     font: "Blinker",
-    size: 8pt
+    size: 10pt
   )
   set page(
     paper: "a4",
-    margin: (x: 1.8cm, y: 1.5cm),
+    margin: (x: 1.5cm, y: 1.5cm),
   )
   set list(indent: 1em)
 
@@ -94,10 +94,10 @@
       weight: "semibold",
       fill: rgb(100, 100, 100),
     )
-    upper(it)//align(center, upper(it))
+    upper(it)
   }
 
-  heading(level: 1)[#contents.title]
+  heading(level: 1, text(size: 26pt)[#contents.title])
   heading(level: 2)[#contents.subtitle]
   grid(
     columns: (1fr, 2fr),

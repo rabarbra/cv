@@ -68,8 +68,8 @@ experience:
     -
       position: Full Stack Software Engineer
       organization: Funexpected LTD
-      from: Oct. 2021
-      to: Mai. 2023
+      from: October 2021
+      to: May 2023
       description:
        - "Developed backend and infrastructure for a mobile app in Python, utilized AWS Lambda for serverless execution, and deployed via Github Actions. Used MongoDB for data storage and SQS for message queuing. Described infrastructure in AWS Cloudformation and wrote deployment configs"
        - "Created an admin console for managing the company's ecosystem. Some of its functionalities include the addition of new tasks to application, updates of media resources, and management of users subscriptions. Backend: Python, MongoDB, AWS. Frontend: React, Typescript, React Admin."
@@ -80,8 +80,8 @@ experience:
     -
       position: Financial Instrument Support Engineer
       organization: Exante LTD
-      from: Apr. 2021
-      to: Oct. 2021
+      from: April 2021
+      to: October 2021
       description:
        - "Automated tasks for the financial instruments support team, leading to an increase in team efficiency and the volume of processed tasks."
        - "Implemented tools for the team, streamlining the process of adding financial instruments to the company's platform and ensuring their optimal performance. Developed scripts for manual and automatic additions, modifications, and uploads, enhancing operational flexibility. Technologies used: Python, Bash, Flask, ElasticSearch, Cron, ETL."
