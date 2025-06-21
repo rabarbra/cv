@@ -41,8 +41,8 @@ jobs:
           ./typst compile --font-path ./fonts cv_de.typ
       - name: Convert pdf to png
         run: |
-          convert -density 900 -background white -alpha off -resize 50% cv_en.pdf cv_en.png
-          convert -density 900 -background white -alpha off -resize 50% cv_de.pdf cv_de.png
+          magic -density 900 -background white -alpha off -resize 50% cv_en.pdf cv_en.png
+          magic -density 900 -background white -alpha off -resize 50% cv_de.pdf cv_de.png
       - uses: actions/upload-artifact@v4
         with:
           name: CVs
