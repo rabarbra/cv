@@ -1,5 +1,6 @@
 title: Polina Simonenko
 subtitle: Full Stack Software Engineer
+
 contact:
   title: Contact
   content:
@@ -10,86 +11,91 @@ contact:
     location:
       city: Wolfsburg
       country: Germany
+
 education:
   title: Education
   content:
-    -
-      organization: 42 Wolfsburg
+    - organization: 42 Wolfsburg
       discipline: Software Engineering
       from: "2022"
       to: Present
-    -
-      organization: Higher School of Economics (Moscow)
+    - organization: Higher School of Economics (Moscow)
       discipline: Mathematics
       from: "2017"
       to: "2018"
-    -
-      organization: Lomonosov Moscow State University
+    - organization: Lomonosov Moscow State University
       discipline: Norwegian Language and Literature
       from: "2013"
       to: "2016"
+
 skills:
   title: Skills
   content:
-    - Python
+    - Go, Python
     - Flask, FastAPI
     - OAuth 2, OpenID Connect
     - SQLAlchemy
-    - TypeScript
-    - React, MUI, Mantine, Redux
+    - TypeScript, Node.js, Next.js
+    - React, MUI, Tailwind CSS
     - MongoDB, Redis
-    - PostgreSQL
+    - PostgreSQL, TimescaleDB
     - Docker, Docker Compose
+    - Kubernetes, Flux CD, Helm, Kustomize
     - "AWS: Lambda, SQS, CloudFormation, ECS"
-    - Github Actions
-    - C, C++
-    - Go
+    - GitHub Actions, GitLab CI
+    - C, C++, Zig
     - Linux, Bash
-    - Esp32, MQTT, Arduino
+    - ESP32, MQTT, LoRaWAN
+
 languages:
   title: Languages
   content:
-    -
-      lang: English
+    - lang: English
       level: B2
-    -
-      lang: German
+    - lang: German
       level: B2
-    -
-      lang: Russian
+    - lang: Russian
       level: native
+
 profile:
   title: Profile
   content:
-    - "I'm a full stack web developer with 2 years of commercial experience. My expertise includes developing web apps, writing both backend (Python, MongoDB, PostgreSQL) and frontend (Typescript, React), packaging in Docker, and deploying on AWS (and other cloud platforms)."
-    - "Additionally, I have expertise in configuring CI/CD pipelines and have significant experience with GitHub Actions."
-    - "I have experience with IoT in educational projects."
+    - "Full-stack software engineer with 3.5+ years of professional experience. I specialize in building modern web applications, both frontend (React, TypeScript) and backend (Go, Python, Node.js) with databases like PostgreSQL and MongoDB."
+    - "Proficient in containerization, CI/CD, and deploying applications to cloud platforms and Kubernetes clusters. Experienced with cloud-native tooling and infrastructure as code."
+
 experience:
   title: Work Experience
   content:
-    -
-      position: Full Stack Software Engineer
+    - position: Full Stack Software Engineer
+      organization: Wobcom GmbH
+      from: Mar 2024
+      to: present
+      description:
+        - "Developed backend microservices and infrastructure for a mobile app using Go and TypeScript, deployed on Kubernetes."
+        - "Built a web application for managing IoT gateways and city devices. Features included signal strength heatmaps, real-time device events on a map, and advanced filtering. Backend: Go, PostgreSQL, Kubernetes. Frontend: JavaScript, MapLibre GL, Tailwind CSS."
+        - "Collaborated in an inter-company agile team across two countries to build a full-stack application for managing cloud resources (compute and connectivity), enabling users to order and manage their infrastructure. Backend: Next.js, ArangoDB, Kubernetes. Frontend: TypeScript, React, Tailwind CSS."
+        - "Wrote unit tests and documentation for all developed features."
+
+    - position: Full Stack Software Engineer
       organization: Funexpected LTD
       from: Oct 2021
       to: May 2023
       description:
-       - "Developed backend and infrastructure for a mobile app in Python, utilized AWS Lambda for serverless execution, and deployed via Github Actions. Used MongoDB for data storage and SQS for message queuing. Described infrastructure in AWS Cloudformation and wrote deployment configs"
-       - "Created an admin console for managing the company's ecosystem. Some of its functionalities include the addition of new tasks to application, updates of media resources, and management of users subscriptions. Backend: Python, MongoDB, AWS. Frontend: React, Typescript, React Admin."
-       - "Collaborated with Apple developers to create a full-stack application for teachers integrated into Apple School Manager Platform, highlighted by Apple as an example of one of the first apps using it. The application allows teacher to create and manages classes, add students, and work with students statistics, etc. Backend: Python, MongoDB, AWS. Frontend: Typescript, React, MUI, TanStack Query."
-       - "Described infrastructure using CloudFormation, wrote comprehensive deployment and CI/CD configurations."
-       - "Authored tests and documentation for my part of work."
-       - "Worked in a team with two-week scrum sprints in agile and efficient development process. Used Asana as tasks tracker."
-    -
-      position: Financial Instrument Support Engineer
+        - "Developed backend and infrastructure for a mobile app using Python and AWS Lambda, deployed via GitHub Actions. Used MongoDB for data storage and SQS for asynchronous messaging. Infrastructure defined with AWS CloudFormation."
+        - "Created an admin console for managing application content, user subscriptions, and media resources. Backend: Python, MongoDB, AWS. Frontend: React, TypeScript, React Admin."
+        - "Collaborated with Apple developers on a teacher-facing web application integrated with Apple School Manager. Highlighted by Apple as an early example of integration. Features included class and student management, statistics, and collaboration tools. Backend: Python, MongoDB, AWS. Frontend: TypeScript, React, MUI, TanStack Query."
+        - "Maintained infrastructure as code (CloudFormation) and comprehensive CI/CD pipelines."
+        - "Wrote unit tests and documentation. Worked in a two-week Scrum cycle using Asana for task tracking."
+
+    - position: Financial Instrument Support Engineer
       organization: Exante LTD
       from: Apr 2021
       to: Oct 2021
       description:
-       - "Automated tasks for the financial instruments support team, leading to an increase in team efficiency and the volume of processed tasks."
-       - "Implemented tools for the team, streamlining the process of adding financial instruments to the company's platform and ensuring their optimal performance."
-       - "Developed scripts for manual and automatic additions, modifications, and uploads, enhancing operational flexibility. Technologies used: Python, Bash, Flask, ElasticSearch, Cron, ETL."
-       - "Automated the entire lifecycle of financial instruments, covering the processes of addition, maintenance, and monitoring."
-       - "Conducted analysis of financial markets, working with exchanges APIs , FIX protocol, and tools like Bloomberg Terminal, Refinitiv, etc."
-       - "Resolved technical issues with contractors, ensuring the smooth functioning of tools and processes. Provided expert advice to clients on market data issues, ensuring optimal utilization of financial instruments."
-       - "Contributed to the identification and resolution of problems related to market data, collaborating with relevant departments for efficient resolution."
-       - "Authored technical documentation, providing comprehensive records of implemented solutions and processes, ensuring transparency and traceability."
+        - "Automated workflows for the financial instruments support team, significantly increasing task throughput."
+        - "Developed internal tools to streamline adding, updating, and maintaining financial instruments on the trading platform."
+        - "Built scripts for both manual and automated data processing. Stack: Python, Bash, Flask, ElasticSearch, Cron, ETL."
+        - "Automated the full lifecycle of financial instrument management, from ingestion to monitoring."
+        - "Worked with exchange APIs, FIX protocol, Bloomberg Terminal, and Refinitiv for market data analysis."
+        - "Resolved technical issues with contractors and advised clients on market data usage and issues."
+        - "Authored technical documentation for tools and workflows, ensuring transparency and maintainability."
