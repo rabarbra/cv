@@ -11,14 +11,13 @@
   "dependencies": {
     "@fontsource/monaspace-krypton": "^5.2.5",
     "js-yaml": "^4.1.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "preact": "^10.29.0"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.3",
+    "terser": "^5.46.1",
     "typescript": "^5.6.3",
     "vite": "^6.0.1"
   }
