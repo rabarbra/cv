@@ -6,7 +6,7 @@
   --surface:  #3b4252;
   --border:   #434c5e;
   --text:     #eceff4;
-  --muted:    #7b88a0;
+  --muted:    #9ba8be;
   --accent:   #88c0d0;
   --tag-bg:   #3b4252;
   --tag-text: #d8dee9;
@@ -61,8 +61,7 @@ a:hover { text-decoration: underline; }
 
 /* ── Header ── */
 .site-header {
-  border-bottom: 1px solid var(--border);
-  padding: 2.5rem 2rem 2rem;
+  padding: 1.25rem 2rem;
 }
 
 .header-inner {
@@ -72,20 +71,15 @@ a:hover { text-decoration: underline; }
 
 .header-top {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1.75rem;
-  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.header-name {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+/* Name block in main content */
+.cv-name {
+  margin-bottom: 1.25rem;
 }
 
-.header-name h1 {
+.cv-name h1 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -96,6 +90,7 @@ a:hover { text-decoration: underline; }
   font-size: 0.85rem;
   color: var(--muted);
   font-weight: 400;
+  margin-top: 0.25rem;
 }
 
 /* Controls: lang + theme */
@@ -130,12 +125,12 @@ a:hover { text-decoration: underline; }
   background: var(--border);
 }
 
-/* Contacts */
-.contacts {
+/* Contacts row */
+.contacts-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 2rem;
-  margin-bottom: 1.5rem;
+  gap: 0.25rem 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact-item {
@@ -160,34 +155,23 @@ a:hover { text-decoration: underline; }
 .contact-item a { color: var(--muted); }
 .contact-item a:hover { color: var(--accent); text-decoration: none; }
 
-/* Download buttons */
-.download-row {
+/* Section header with optional actions */
+.section-header {
   display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.3rem 0.85rem;
-  border: 1px solid var(--border);
-  font-family: inherit;
-  font-size: 0.8rem;
-  color: var(--muted);
-  background: none;
-  cursor: pointer;
-  text-decoration: none;
-  transition: border-color 0.12s, color 0.12s;
+.section-header .section-title { margin-bottom: 0; }
+
+.pdf-links {
+  display: flex;
+  gap: 0.375rem;
+  flex-shrink: 0;
 }
 
-.btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-
-.btn-primary {
-  border-color: var(--accent);
-  color: var(--accent);
-}
 
 
 /* ── Main content ── */
@@ -217,7 +201,7 @@ a:hover { text-decoration: underline; }
 /* Profile */
 .profile-para {
   font-size: 0.875rem;
-  color: var(--muted);
+  color: var(--text);
   margin-bottom: 0.75rem;
   max-width: 68ch;
 }
@@ -266,7 +250,7 @@ a:hover { text-decoration: underline; }
 
 .job-desc li {
   font-size: 0.825rem;
-  color: var(--muted);
+  color: var(--text);
   padding-left: 1rem;
   position: relative;
 }
@@ -341,8 +325,8 @@ a:hover { text-decoration: underline; }
 
 /* ── Responsive ── */
 @media (max-width: 580px) {
-  .site-header, .gh-section { padding-left: 1rem; padding-right: 1rem; }
+  .site-header { padding-left: 1rem; padding-right: 1rem; }
   .main-content { padding: 2rem 1rem; }
-  .header-top { flex-direction: column; }
   .job-header { flex-direction: column; }
+  .contacts-row { flex-direction: column; gap: 0.5rem; }
 }
