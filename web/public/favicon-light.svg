@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="3" seed="8" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.9"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <path
+    d="M16,29
+       Q17.4,25.1 19.4,21
+       Q24.1,21.2 28.6,20.3
+       Q25.1,17.2 21.3,14.2
+       Q23.4,9.5 23.5,5.3
+       Q19.9,7.9 16,10.6
+       Q12.2,7.7 8.3,5.5
+       Q8.8,9.7 10.7,14.3
+       Q6.9,17.4 3.4,20.5
+       Q7.9,20.8 12.5,21
+       Q14.3,25.2 16,29Z"
+    fill="none"
+    stroke="#eceff4"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#rough)"
+  />
+</svg>
